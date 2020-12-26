@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Indice';
+  queEs = false;
+  referencia = true;
+
+  onQueEs(){
+    this.queEs = true;
+    this.referencia = false;
+
+  }
+
+  onReferencia(){
+    this.referencia = true;
+    this.queEs = false;
+  }
 }
