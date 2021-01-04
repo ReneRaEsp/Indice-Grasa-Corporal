@@ -15,6 +15,13 @@
 	</div>
 	<div *ngIf="calculado" class="resultado d-flex justify-content-start flex-column font-weight-bold  rounded p-2 w-75 mt-4">
 		<p>Su índice de grasa corporal es de {{ iGC }}%</p>
+		<p *ngIf="atleta">De acuerdo a su edad y género usted tiene un IGC de Atleta, si usted esta dentro de este rango y no es atleta considere ir a un nutricionista</p>
+		<p *ngIf="bueno">De acuerdo a su edad y género usted tiene un IGC "Bueno"</p>
+		<p *ngIf="normal">De acuerdo a su edad y género usted tiene un IGC Normal</p>
+		<p *ngIf="elevado">De acuerdo a su edad y género usted tiene un IGC Elevado, usted debe considerar hacer dieta y ejercicio</p>
+		<p *ngIf="muyElevado">De acuerdo a su edad y género usted tiene un IGC Muy Elevado, usted debe considerar hacer dieta y ejercicio, e ir con un doctor</p>
+		<p *ngIf="fueraRango">IGC y/o edad fuera de rango, lo sentimos no poseemos datos para este IGC y/o esta edad</p>
+
 		
 	</div>
 </section>
