@@ -5,7 +5,7 @@ body
 		margin: auto
 		.header
 			width: 1120px
-			height: 76px	
+			height: auto	
 			margin: auto
 			margin-top: 0rem
 			border-radius: 12px 20px 0 0
@@ -18,7 +18,7 @@ body
 					height: 56px
 		.body
 			width: 1120px
-			height: 580px
+			height: auto
 			margin: auto
 			border-right: solid 9px rgb(63, 191, 191)
 			border-left: solid 9px rgb(63, 191, 191)
@@ -49,3 +49,16 @@ th
 	font-size: 12px
 td
 	font-size: 12px
+
+@media screen and (max-width: 600px)
+	body
+		.container
+			.header
+				height: auto
+				width: auto
+			.body
+				height: auto
+				width: auto
+			.footer
+				height: auto
+				width: auto

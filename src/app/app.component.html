@@ -8,23 +8,23 @@
 <body>
   <section class="container">
     <header class="header d-flex justify-content-around row">
-        <div class="col-6 d-flex justify-content-center">
-          <button class="col-7 botones boton1 btn btn-light text-dark font-weight-bold">Calcular indice 
+        <div class="col-12 col-sm-6 d-flex justify-content-center p-4">
+          <button class="m-1 m-sm-none col-12 col-sm-7 botones boton1 btn btn-light text-dark font-weight-bold">Calcular indice 
           de grasa corporal</button>
         </div>
-        <div class="col-6 d-flex justify-content-between flex-row">
-          <button (click)="onQueEs()" class="botones boton1 btn btn-light text-dark font-weight-bold">¿Que es el indice 
+        <div class="col-12 col-sm-6 d-flex justify-content-between flex-row p-4">
+          <button (click)="onQueEs()" class="m-1 m-sm-none botones boton1 btn btn-light text-dark font-weight-bold">¿Que es el indice 
         de grasa corporal?</button>
-          <button (click)="onReferencia()" class="ml-3 botones boton1 btn btn-dark text-light font-weight-bold">Referencia de 
+          <button (click)="onReferencia()" class="m-1 m-sm-none ml-3 botones boton1 btn btn-dark text-light font-weight-bold">Referencia de 
       indice de grasa corporal</button>
         </div>
       
     </header>
     <div class="body row">
-      <div class="ladoA col-6 ">
+      <div class="ladoA col-12 col-sm-6 ">
         <app-calcular></app-calcular>
       </div>
-      <div class="ladoB col-6 ">
+      <div class="ladoB col-12 col-sm-6 mt-4 mt-sm-none">
         <div class="ladoB1" *ngIf="queEs">
           <div class="ladoB2 rounded p-2 m-4">
             <p class="ladoB3 text-justify m-2"> El porcentaje de grasa corporal (BFP) de un ser humano u otro ser vivo es la masa total de grasa dividida por la masa corporal total, multiplicada por 100; la grasa corporal incluye grasa corporal esencial y grasa corporal de almacenamiento.<br/> <br/></p><p class="ladoB3 text-justify m-2" >La grasa corporal esencial es necesaria para mantener la vida y las funciones reproductivas. El porcentaje de grasa corporal esencial para las mujeres es mayor que para los hombres, debido a las demandas de la maternidad y otras funciones hormonales.<br/><br></p><p class="ladoB3 text-justify m-2" > El almacenamiento de grasa corporal consiste en la acumulación de grasa en el tejido adiposo, parte del cual protege los órganos internos en el pecho y el abdomen.<br/><br/></p> <p class="ladoB3 text-justify m-2" >El porcentaje mínimo recomendado de grasa corporal total excede el valor del porcentaje de grasa esencial informado anteriormente.</p>
