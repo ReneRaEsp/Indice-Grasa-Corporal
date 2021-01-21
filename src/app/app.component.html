@@ -6,13 +6,13 @@
   <title>Indice de grasa corporal</title>
 </head>
 <body>
-  <section class="container">
+  <section class="contenedor">
     <header class="header d-flex justify-content-around row">
-        <div class="col-12 col-sm-6 d-flex justify-content-center p-4">
+        <div class="col-10 col-sm-6 d-flex justify-content-center p-sm-4">
           <button class="m-1 m-sm-none col-12 col-sm-7 botones boton1 btn btn-light text-dark font-weight-bold">Calcular indice 
           de grasa corporal</button>
         </div>
-        <div class="col-12 col-sm-6 d-flex justify-content-between flex-row p-4">
+        <div class="col-12 col-sm-6 d-none d-sm-flex justify-content-between flex-row p-1 p-sm-4">
           <button (click)="onQueEs()" class="m-1 m-sm-none botones boton1 btn btn-light text-dark font-weight-bold">¿Que es el indice 
         de grasa corporal?</button>
           <button (click)="onReferencia()" class="m-1 m-sm-none ml-3 botones boton1 btn btn-dark text-light font-weight-bold">Referencia de 
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="ladoBB1" *ngIf="referencia">
-          <div class="titulo1 d-flex justify-content-center font-weight-bold mt-1 align-content-center rounded btn-dark"><p class="mt-1">Grasa corporal ideal en el hombre según la edad</p></div>
+          <div class="titulo1 d-flex justify-content-center font-weight-bold mt-1 align-content-center rounded btn-dark flex-wrap d-flex"><p class="mt-1">Grasa corporal ideal en el hombre según la edad</p></div>
           <table class="table table-hover table-bordered table-striped">
            <thead class="thead-light">
               <tr>
@@ -80,7 +80,7 @@
              </tr>
             </tbody>
           </table>
-          <div class="titulo2 d-flex justify-content-center font-weight-bold align-content-center rounded btn-dark"><p class="mt-1">Grasa corporal ideal la mujer según la edad</p></div>
+          <div class="titulo2 d-flex justify-content-center font-weight-bold align-content-center rounded btn-dark flex-wrap d-flex"><p class="mt-1">Grasa corporal ideal la mujer según la edad</p></div>
           <table class="table table-hover table-bordered table-striped">
            <thead class="thead-light">
               <tr>
@@ -134,7 +134,7 @@
       
     </div>
     <footer class="footer d-flex justify-content-center ">
-      <h6 class="text-light font-weight-bold mt-1">Aplicación desarrollada por René Ramírez, visitanos en: <a class="text-dark" href="https://wwww.ramesptop.com">www.ramesptop.com</a></h6>
+      <h6 class="text-light font-weight-bold mt-1">Aplicación desarrollada por René Ramírez, visitanos en: <a class="text-dark" href="https://www.ramesptop.com">www.ramesptop.com</a></h6>
     </footer>
   </section>
   

@@ -1,7 +1,8 @@
 body
 	display: flex
 	justify-content: center
-	.container
+	overflow: hidden
+	.contenedor
 		margin: auto
 		.header
 			width: 1120px
@@ -52,13 +53,52 @@ td
 
 @media screen and (max-width: 600px)
 	body
-		.container
+		.contenedor
 			.header
 				height: auto
 				width: auto
+				div
+					.botones
+						font-size: 14px
 			.body
 				height: auto
 				width: auto
 			.footer
 				height: auto
 				width: auto
+
+	th
+		font-size: 9px
+	td
+		font-size: 9px
+
+	.titulo1
+		font-size: 14px
+	.titulo2
+		font-size: 14px
+
+@media screen and (max-width: 300px)
+	body
+		.contenedor
+			.header
+				height: auto
+				width: auto
+				div
+					.botones
+						font-size: 10px
+			.body
+				height: auto
+				width: auto
+			.footer
+				height: auto
+				width: auto
+
+	th
+		font-size: 7px
+	td
+		font-size: 7px
+
+	.titulo1
+		font-size: 10px
+	.titulo2
+		font-size: 10px
